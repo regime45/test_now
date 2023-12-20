@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>insertBefore demo</title>
+  <style>
+  #foo {
+    background: yellow;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+ 
+<p id="foo">FOO!</p>
+<!-- <p>I would like to say: </p>  -->
+
+<span>I have something to say... </span>
+ 
+<script>
+
+//$( "p" ).insertBefore( "#foo" );
+
+$( "span" ).prependTo( "#foo" );
+</script>
+ 
+</body>
+</html>
